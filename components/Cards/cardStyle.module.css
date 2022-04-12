@@ -1,0 +1,98 @@
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.eventPoster {
+  width: 100%;
+  height: 100%;
+}
+.cardBodyContainer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(250, 250, 250, 0.33);
+  backdrop-filter: blur(35px);
+  border-radius: 0px 12px 12px 12px;
+  width: 100%;
+}
+.cardBodyContent {
+  padding: 24px;
+  padding-top: 0;
+}
+.cardBody {
+  position: relative;
+}
+.title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 27.64px;
+}
+.subTitle {
+  color: #3b3c3e;
+  font-size: 14px;
+  line-height: 24.18px;
+}
+.subTitle::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #3b3c3e;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.description {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 6px;
+  line-height: 24.18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
+.viewEvent {
+  color: #f9bd00;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: transparent;
+  border: none;
+}
+.yellowCircle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  top: -12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 2, 0.93) 0%,
+    rgba(252, 187, 41, 0.93) 37.53%,
+    rgba(254, 117, 83, 0.93) 93.54%
+  );
+  backdrop-filter: blur(179px);
+}
+.purpleCircle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 32px;
+  top: -12px;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    180deg,
+    #e75f98 0%,
+    #9d2055 46.21%,
+    #4f0423 97.17%
+  );
+  /* backdrop-filter: blur(179px); */
+}

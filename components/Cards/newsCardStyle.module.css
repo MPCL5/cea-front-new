@@ -1,0 +1,212 @@
+.newsContainer {
+  width: 562px;
+  height: 215px;
+  position: relative;
+  background: rgba(100, 24, 24, 0.904);
+  box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(86px);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.posterContainer {
+  padding-right: 58px;
+  padding-top: 31px;
+  padding-bottom: 48px;
+  flex: 0 0 auto;
+}
+.newsPoster {
+  width: 139px;
+  height: 139px;
+  border-radius: 12px;
+}
+.cardBodyContainer {
+  flex: 0 0 auto;
+  width: calc(100% - 197px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 31px;
+  padding-left: 13px;
+  padding-right: 30px;
+}
+.cardTitleBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right {
+  bottom: 0;
+  margin-top: 10px;
+  background-color: rgba(250, 250, 250, 0.33);
+  backdrop-filter: blur(35px);
+  border-radius: 0px 12px 12px 12px;
+  width: calc(100% - 120px);
+}
+.titleGrid {
+  bottom: 0;
+  background-color: rgba(250, 250, 250, 0.33);
+  backdrop-filter: blur(35px);
+  border-radius: 0px 12px 12px 12px;
+  width: 100%;
+}
+.subTitleGrid {
+  bottom: 0;
+  background-color: rgba(250, 250, 250, 0.33);
+  backdrop-filter: blur(35px);
+  border-radius: 0px 12px 12px 12px;
+  width: 100%;
+}
+.left {
+  width: 117px;
+}
+.cardBodyContent {
+  padding: 24px;
+  padding-top: 0;
+}
+.viewNew {
+  padding: 24px;
+  padding-top: 0;
+}
+
+.cardBody {
+  position: relative;
+}
+.title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 27.64px;
+}
+.subTitle {
+  color: #3b3c3e;
+  font-size: 14px;
+  line-height: 24.18px;
+}
+.subTitle::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #3b3c3e;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.description {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 6px;
+  line-height: 24.18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
+.viewNewButton {
+  color: #f9bd00;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: transparent;
+  border: none;
+}
+.yellowCircle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  top: -12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 2, 0.93) 0%,
+    rgba(252, 187, 41, 0.93) 37.53%,
+    rgba(254, 117, 83, 0.93) 93.54%
+  );
+  backdrop-filter: blur(179px);
+}
+.purpleCircle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 32px;
+  top: -12px;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    180deg,
+    #e75f98 0%,
+    #9d2055 46.21%,
+    #4f0423 97.17%
+  );
+  /* backdrop-filter: blur(179px); */
+}
+.bannerContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.topBanner {
+}
+.bottomBanner {
+}
+
+@media (max-width: 576px) {
+  .newsContainer {
+    width: 100%;
+    height: unset;
+    position: relative;
+    background: rgba(100, 24, 24, 0.904);
+    box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05),
+      inset 0px 4px 4px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(86px);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .posterContainer {
+    padding-right: 16px;
+    padding-top: 31px;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+  .cardBodyContainer {
+    flex: 0 0 auto;
+    width: calc(100% - 125px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+  .eventButton {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .newsPoster {
+    width: 108px;
+    height: 106px;
+    border-radius: 12px;
+  }
+  .description {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 6px;
+    line-height: 24.18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

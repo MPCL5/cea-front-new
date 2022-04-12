@@ -1,0 +1,14 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  text-align: center;
+}
+.itemtTitle {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,7 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import EventCard from "components/Cards/EventCard";
+import NewsCard from "components/Cards/EventCard";
+import MobileNewsCard from "components/Cards/MobileNewsCard";
+import Layout from "components/Layout/Layout";
 const Home: NextPage = () => {
   return (
     <div className="container">
@@ -12,12 +15,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="m-auto">
-        <h1 className="text-primary text-center">
-          سلام گل
-        </h1>
+        <Layout>
+          <h1 className="text-primary text-center">سلام گل</h1>
+          <MobileNewsCard eventData={"ss"} />
+        </Layout>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
